@@ -10,7 +10,7 @@ last_name: Cao
 superuser: false
 
 # Role/position
-role: Principal Investigator
+role: Research Professor
 
 # Organizations/Affiliations
 organizations:
@@ -60,9 +60,9 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principal Investigator
+  - Members
 ---
 
-Dr. Cao obtained his Ph.D. from the University of Montreal, Polytechnique Montreal in 2020, supervised by Prof. Giovanni Beltrame. From 2018 to 2019, he had visited the University of Tübingen (Prof. Andreas Zell's Lab) and the Technical University of Munich (Prof. Alois Knoll's Lab) for six months and one year respectively. Now, he is PI of The Center of Swamr Navigation in Huzhou Institute of Zhejiang University, and also the group leader of FAST-FIRE. 
+Dr. Cao obtained his Ph.D. from the University of Montreal, Polytechnique Montreal in 2020, supervised by Prof. Giovanni Beltrame. From 2018 to 2019, he had visited the University of Tübingen (Prof. Andreas Zell's Lab) and the Technical University of Munich (Prof. Alois Knoll's Lab) for six months and one year respectively. Now, he is PI of The Center of Swamr Navigation in Huzhou Institute of Zhejiang University, and also the group leader of [FAST-FIRE](https://fast-fire.github.io/). He is also a ZJU100 research assistant professor with Zhejiang University at Huzhou Institute Platform.
 
 His research focuses on key challenges in multi-robot systems, such as collaborative localization, perception, communication, and system organization. The vision is to develop systems that can be easily deployed, as scalable, distributed, multi-robot systems in complex unstructured environments for real-world tasks in the future.
