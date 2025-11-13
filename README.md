@@ -1,48 +1,91 @@
-# [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group)
+# 上传个人信息与成果到网站
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+## 注意事项
+- 请**不要修改**自己的文件夹以外的任何文件！
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
+---
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## 添加个人信息
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+1. **克隆到本地：**
+    ```bash
+    git clone https://github.com/ZJU-FAST-Lab/zju-fast-lab.github.io.git
+    ```
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+2. **创建个人文件夹：**
+    - 打开 `zju-fast-lab.github.io/content/authors` 目录，在其中创建一个新文件夹。
+    - 将文件夹重命名为自己的英文拼音，格式为：`名在前，姓在后`。
 
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 60 seconds, or [view the showcase](https://hugoblox.com/creators/).
+3. **复制模板文件：**
+    - 复制 `zju-fast-lab.github.io/templates/people_template/_index.md` 文件到自己在 `content/authors` 目录下的文件夹中。
+    - 按照文件中的提示修改个人信息。
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+4. **上传个人照片：**
+    - 将个人照片放入自己文件夹下，并重命名为 `avatar.jpg`。
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+---
 
-## We ask you, humbly, to support this open source movement
+## 上传论文
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
+### 上传会议论文
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+1. 在 `zju-fast-lab.github.io/content/publication/conference-paper` 目录中创建一个新文件夹，命名格式为：  
+   `会议+年份-姓名首字母缩写-论文名称缩写`  
+   例如：`icra2025-zmk-3dplanner`
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+2. **复制模板文件：**
+    - 从 `D:\Project\zju-fast-lab.github.io\templates\publication_template\conference-paper_template` 中复制以下4个文件到新文件夹中：
+        - `cite.bib`
+        - `index.md`
+        - `conference-paper.pdf`
+        - `featured.jpg`
 
-## Demo credits
+3. **修改文件内容：**
+    - 修改 `cite.bib` 和 `index.md`，并替换 `conference-paper.pdf` 和 `featured.jpg` 为自己的论文文件和头图。命名不变。
 
-Please replace the demo images with your own.
+---
 
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
-- Blog posts
-  - https://unsplash.com/photos/AndE50aaHn4
-  - https://unsplash.com/photos/OYzbqk2y26c
-- Avatars
-  - https://unsplash.com/photos/5yENNRbbat4
-  - https://unsplash.com/photos/WNoLnJo7tS8
+### 上传期刊论文
+
+1. 在 `zju-fast-lab.github.io/content/publication/journal-article` 目录中创建一个新文件夹，命名格式为：  
+   `期刊+年份-姓名首字母缩写-论文名称缩写`  
+   例如：`journal2025-zmk-ai-approach`
+
+2. **复制模板文件：**
+    - 从 `D:\Project\zju-fast-lab.github.io\templates\publication_template\journal-article_template` 中复制以下3个文件到新文件夹中：
+        - `cite.bib`
+        - `index.md`
+        - `featured.jpg`
+
+3. **修改文件内容：**
+    - 修改 `cite.bib` 和 `index.md`，替换 `featured.jpg` 为自己的论文头图。命名不变。
+
+---
+
+## 上传新闻
+
+1. 在 `D:\Project\zju-fast-lab.github.io\content\post` 目录中创建一个新文件夹，命名格式为：  
+   `日期+新闻简介`  
+   例如：`25-10-10-RAL-accepted`
+
+2. **复制模板文件：**
+    - 从 `D:\Project\zju-fast-lab.github.io\templates\news_template` 中复制以下2个文件到新文件夹中：
+        - `index.md`
+        - `featured.jpg`
+
+3. **修改文件内容：**
+    - 修改 `index.md` 为自己的新闻信息，替换图片。
+
+---
+
+## 提交更改
+
+1. 修改完成后，使用以下命令将更改提交到 GitHub：
+    ```bash
+    git commit -am "姓名拼音"
+    git push origin main
+    ```
+
+2. 提交时，命名提交为 `姓名拼音` 方便追踪。
+
+---
